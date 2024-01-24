@@ -5,7 +5,7 @@
 ## Visão Geral 🔎
 Hoje devido ao crescimento da RDSTATION, nossa infraestrutura do Kubernetes, cluster-production está sempre muito próximo dos seus limites operacionais e também com algumas de suas configurações originais que foram realizadas no ato de sua criação mantém-se inalteradas e imutáveis até hoje.
 
-Visando resolver será criado projeto da Google para cada domínio e cada domínio deverá ter o seu próprio Cluster. O Script Hefesto visa automatizar o processo de criação do Cluster gerando um template de terraform baseado nos input que o desenvolver desejar.
+Visando resolver será criado projeto da Google para cada domínio e cada domínio deverá ter o seu próprio Cluster. O Script Hefesto visa automatizar o processo de criação do Cluster gerando um template de terraform baseado nos input que o desenvolvedor desejar.
 
 ## Quais são as opções do script?
  * -d domino               - Domínio que deve ter o cluster criado
@@ -21,7 +21,7 @@ O script deve sempre ser executado no diretório onde o projeto tf-projects se e
     bash $(curl -sk $URL_raw) -d infosec -n test-network -e stg 
 
 
-## Fluxo de erros
+## Fluxos de erros
 O script conta com fluxos de erros definidos para ajudar com quaisquer necessidade de integração com outros scripts em bash. Você poderá verificar o exit status do script executando o comando "echo $?" logo após a execução do script.
 
  * código 0 - Script executado com sucesso.
